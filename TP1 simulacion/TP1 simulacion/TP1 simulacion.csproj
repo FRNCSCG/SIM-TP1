@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2D8C3BCF-96F3-4EFF-B69B-A5D3CA584853}</ProjectGuid>
+    <ProjectGuid>{91526C3B-F97A-429A-9504-DE7F96EEFFF8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SIM_TP1</RootNamespace>
-    <AssemblyName>SIM TP1</AssemblyName>
+    <RootNamespace>TP1_simulacion</RootNamespace>
+    <AssemblyName>TP1 simulacion</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,17 +47,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Variables.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Main.cs">
+    <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Punto2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Punto2.Designer.cs">
+      <DependentUpon>Punto2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Punto3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Punto3.Designer.cs">
+      <DependentUpon>Punto3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Punto_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Punto_1.Designer.cs">
+      <DependentUpon>Punto_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Variables.cs" />
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -67,6 +86,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Punto2.resx">
+      <DependentUpon>Punto2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Punto3.resx">
+      <DependentUpon>Punto3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Punto_1.resx">
+      <DependentUpon>Punto_1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

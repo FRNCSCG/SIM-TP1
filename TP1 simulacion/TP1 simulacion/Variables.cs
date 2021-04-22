@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SIM_TP1.Clases
+namespace TP1_simulacion
 {
     class Variables
     {
@@ -28,6 +28,4 @@ namespace SIM_TP1.Clases
         public float Xsig { get => xsig; set => xsig = value; }
         public float G { get => g; set => g = value; }
     }
-
-
 }
